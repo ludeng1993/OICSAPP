@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0"><meta name=format-detection content="telephone=no"><title>运营内控</title><link rel=stylesheet href=static/css/callpu.css><script type=text/javascript src=static/js/jquery-1.11.3.min.js></script><script type=text/javascript src=static/js/callpu.js></script><script type=text/javascript src=https://upchat.95516.net/public/scripts/app.upchat.js></script><link href=./static/css/app.646f419b1a4086977803d256546b4797.css rel=stylesheet></head><style>.vux-x-input.disabled {
+    color: #999999 !important;
+  }
+
+  .vux-cell-value {
+    color: #000 !important;
+  }
+
+  .vux-cell-disabled .vux-label {
+    color: #999999 !important;
+  }
+
+  .weui-dialog__title {
+    font-size: 16px !important;
+  }
+
+  .weui-dialog__ft {
+    font-size: 16px !important;
+  }
+
+  textarea {
+    font-family: Arial, Helvetica, sans-serif, -apple-system-font, "Helvetica Neue", sans-serif !important;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif, -apple-system-font, "Helvetica Neue", sans-serif !important;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-family: Arial, Helvetica, sans-serif, -apple-system-font, "Helvetica Neue", sans-serif !important;
+  }
+
+  .weui-tabbar__label {
+    font-size: 18px !important;
+  }
+
+  .cus_badge {
+    background: #b2b2b2 !important;
+    color: #fff !important;
+  }
+
+  /*按钮颜色*/
+
+  .weui-btn_primary {
+    background-color: #00a0ea !important;
+  }
+
+  /*固定按钮样式*/
+
+  .div_flexbox_pos {
+    display: flex;
+    position: absolute;
+    z-index: 500;
+    bottom: 50px;
+    width: 100%;
+  }</style><body><input type=button value=关闭窗口1 onclick=closeWindow1()> <input type=button value=关闭窗口 onclick=closeWindow()><div id=app-box></div><script type=text/javascript src=./static/js/manifest.c445eb6bdc2bda6ef878.js></script><script type=text/javascript src=./static/js/vendor.6e74b490437ecba7ed15.js></script><script type=text/javascript src=./static/js/app.ca138c1b9b3e6a351375.js></script></body><script>　　function closeWindow() 
+
+　　{ 
+
+　　　　　window.opener = null; 
+
+　　　　　window.open(' ', '_self', ' '); 
+window.open(' ', '_top', ' '); 
+
+　　　　　window.close(); 
+
+　　} 
+　　function closeWindow1() 
+
+　　{ 
+  window.close()
+
+　　} 
+  app.start();
+  $(function(){
+//pushHistory();
+window.addEventListener("popstate", function(e) {
+alert("我监听到了浏览器的返回按钮事件啦");//根据自己的需求实现自己的功能
+}, false);
+function pushHistory() {
+var state = {
+title: "title",
+url: "#"
+};
+window.history.pushState(state, "title", "#");
+}
+});</script></html>
